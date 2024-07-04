@@ -1,0 +1,136 @@
+{
+    "questions": [
+      {
+        "level": "Junior",
+        "question": "What is the correct way to declare a variable in C#?",
+        "answers": {
+          "a": "var myVariable = 10;",
+          "b": "int myVariable = 10;",
+          "c": "variable myVariable = 10;",
+          "d": "declare myVariable = 10;"
+        },
+        "correctAnswer": "b"
+      },
+      {
+        "level": "Junior",
+        "question": "Which of the following is used to define a class in C#?",
+        "answers": {
+          "a": "struct",
+          "b": "interface",
+          "c": "class",
+          "d": "object"
+        },
+        "correctAnswer": "c"
+      },
+      {
+        "level": "Junior",
+        "question": "What is the purpose of the 'using' statement in C#?",
+        "answers": {
+          "a": "To import namespaces",
+          "b": "To create a new object",
+          "c": "To define a new class",
+          "d": "To start a new thread"
+        },
+        "correctAnswer": "a"
+      },
+      {
+        "level": "Junior",
+        "question": "Which keyword is used to inherit a class in C#?",
+        "answers": {
+          "a": "inherits",
+          "b": "extends",
+          "c": "implements",
+          "d": ":"
+        },
+        "correctAnswer": "d"
+      },
+      {
+        "level": "Intermediate",
+        "question": "What is the difference between 'ref' and 'out' parameters in C#?",
+        "answers": {
+          "a": "There is no difference",
+          "b": "'ref' requires the parameter to be initialized before passing, 'out' does not",
+          "c": "'out' requires the parameter to be initialized before passing, 'ref' does not",
+          "d": "'ref' is used for value types, 'out' for reference types"
+        },
+        "correctAnswer": "b"
+      },
+      {
+        "level": "Intermediate",
+        "question": "What is the purpose of the 'virtual' keyword in C#?",
+        "answers": {
+          "a": "To create an abstract method",
+          "b": "To prevent a method from being overridden",
+          "c": "To allow a method to be overridden in derived classes",
+          "d": "To create a static method"
+        },
+        "correctAnswer": "c"
+      },
+      {
+        "level": "Intermediate",
+        "question": "What is a delegate in C#?",
+        "answers": {
+          "a": "A type that represents references to methods with a particular parameter list and return type",
+          "b": "A way to create multiple instances of a class",
+          "c": "A method that can only be called within the same class",
+          "d": "A type of exception handling mechanism"
+        },
+        "correctAnswer": "a"
+      },
+      {
+        "level": "Intermediate",
+        "question": "What is the purpose of the 'yield' keyword in C#?",
+        "answers": {
+          "a": "To pause the execution of a method",
+          "b": "To return multiple values from a method",
+          "c": "To implement the IEnumerable interface",
+          "d": "To create a custom exception"
+        },
+        "correctAnswer": "b"
+      },
+      {
+        "level": "Confirmed",
+        "question": "What is the difference between 'const' and 'readonly' in C#?",
+        "answers": {
+          "a": "There is no difference",
+          "b": "'const' is evaluated at compile-time, 'readonly' at runtime",
+          "c": "'readonly' can only be used for value types, 'const' for any type",
+          "d": "'const' can be changed during runtime, 'readonly' cannot"
+        },
+        "correctAnswer": "b"
+      },
+      {
+        "level": "Confirmed",
+        "question": "What is the purpose of the 'lock' statement in C#?",
+        "answers": {
+          "a": "To prevent multiple threads from accessing a resource simultaneously",
+          "b": "To create a new thread",
+          "c": "To terminate a running thread",
+          "d": "To synchronize access to static members of a class"
+        },
+        "correctAnswer": "a"
+      },
+      {
+        "level": "Confirmed",
+        "question": "What is the difference between an abstract class and an interface in C#?",
+        "answers": {
+          "a": "Abstract classes can have implemented methods, interfaces cannot",
+          "b": "Interfaces can have fields, abstract classes cannot",
+          "c": "A class can implement multiple interfaces but inherit from only one abstract class",
+          "d": "Both A and C"
+        },
+        "correctAnswer": "d"
+      },
+      {
+        "level": "Confirmed",
+        "question": "What is the purpose of the 'unsafe' keyword in C#?",
+        "answers": {
+          "a": "To mark a method as potentially throwing exceptions",
+          "b": "To allow the use of pointers and direct memory manipulation",
+          "c": "To prevent a class from being inherited",
+          "d": "To create a method that can only be called asynchronously"
+        },
+        "correctAnswer": "b"
+      }
+    ]
+  }
