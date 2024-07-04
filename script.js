@@ -21,15 +21,17 @@ function buildQuiz() {
 
             for (letter in questionData.answers) {
                 answers.push(
-                    `<label>
-                        <input type="${isMultiSelect ? 'checkbox' : 'radio'}" name="question${questionNumber}" value="${letter}">
-                        <span>${letter} : ${questionData.answers[letter]}</span>
-                    </label>`
+                    `<p>
+                        <label>
+                            <input type="${isMultiSelect ? 'checkbox' : 'radio'}" name="question${questionNumber}" value="${letter}" />
+                            <span>${letter}: ${questionData.answers[letter]}</span>
+                        </label>
+                    </p>`
                 );
             }
 
             output.push(
-                `<div class="card">
+                `<div class="card question-card">
                     <div class="card-content">
                         <span class="card-title question">${questionData.question}</span>
                         <div class="answers">${answers.join('')}</div>
@@ -40,7 +42,7 @@ function buildQuiz() {
     });
 
     document.getElementById('quiz').innerHTML = output.join('');
-    M.updateTextFields(); // Update Materialize text fields
+    M.updateTextFields();
 }
 
 function showResults() {
@@ -53,9 +55,7 @@ function showResults() {
         if (answerContainer) {
             totalQuestions++;
             const isMultiSelect = Array.isArray(questionData.correctAnswer);
-            const selector = isMultiSelect
-                ? `input[name=question${questionNumber}]:checked`
-                : `input[name=question${questionNumber}]:checked`;
+            const selector = `input[name=question${questionNumber}]:checked`;
             const userAnswers = Array.from(answerContainer.querySelectorAll(selector)).map(el => el.value);
 
             const isCorrect = isMultiSelect
@@ -87,10 +87,8 @@ function arraysEqual(arr1, arr2) {
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('select');
     var instances = M.FormSelect.init(elems);
+    loadQuestions();
 });
 
 document.getElementById('difficulty').addEventListener('change', buildQuiz);
 document.getElementById('submit').addEventListener('click', showResults);
-
-// Load questions when the page loads
-loadQuestions();

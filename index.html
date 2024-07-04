@@ -9,21 +9,28 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <nav class="blue darken-1">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">C# Quiz</a>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="row">
             <div class="col s12">
-                <h1 class="center-align">New C# Quiz</h1>
-                <div id="difficulty-selector" class="input-field">
+                <h4 class="center-align">Test Your C# Knowledge</h4>
+                <div class="input-field">
                     <select id="difficulty">
                         <option value="All">All Levels</option>
-                        <option value="Junior">Junior</option>
+                        <option value="Basic">Basic</option>
                         <option value="Intermediate">Intermediate</option>
-                        <option value="Confirmed">Confirmed</option>
+                        <option value="Advanced">Advanced</option>
+                        <option value="Expert">Expert</option>
                     </select>
                     <label>Select Difficulty</label>
                 </div>
                 <div id="quiz"></div>
-                <button id="submit" class="btn waves-effect waves-light">
+                <button id="submit" class="btn waves-effect waves-light blue darken-1">
                     Submit Quiz
                     <i class="material-icons right">send</i>
                 </button>
@@ -31,6 +38,7 @@
             </div>
         </div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./script.js"></script>
 </body>

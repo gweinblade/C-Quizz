@@ -1,50 +1,59 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
     background-color: #f5f5f5;
+}
+
+main {
+    flex: 1 0 auto;
 }
 
 .container {
     margin-top: 2rem;
 }
 
-h1 {
-    color: #2196F3;
+.question-card {
+    margin-bottom: 1rem;
 }
 
 .question {
-    background-color: #2196F3;
-    color: white;
-    padding: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.answers label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#submit {
     margin-top: 1rem;
-    border-radius: 4px;
-}
-
-.answers {
-    padding: 1rem;
-    background-color: white;
-    border-radius: 4px;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-}
-
-[type="checkbox"]+span:not(.lever):before, 
-[type="checkbox"]:not(.filled-in)+span:not(.lever):after {
-    border-color: #2196F3;
-}
-
-[type="checkbox"]:checked+span:not(.lever):before {
-    border-right-color: #2196F3;
-    border-bottom-color: #2196F3;
-}
-
-.btn {
-    background-color: #2196F3;
-}
-
-.btn:hover {
-    background-color: #1E88E5;
+    margin-bottom: 1rem;
 }
 
 #result {
     font-weight: bold;
-    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Custom styles for checkboxes and radio buttons */
+[type="checkbox"]+span:not(.lever):before, 
+[type="checkbox"]:not(.filled-in)+span:not(.lever):after,
+[type="radio"]:not(:checked)+span:before, 
+[type="radio"]:not(:checked)+span:after {
+    border-color: #2196F3;
+}
+
+[type="checkbox"]:checked+span:not(.lever):before,
+[type="radio"]:checked+span:before {
+    border-right-color: #2196F3;
+    border-bottom-color: #2196F3;
+}
+
+/* Ensure radio buttons and checkboxes are visible */
+[type="radio"]:not(:checked)+span, 
+[type="radio"]:checked+span,
+[type="checkbox"]+span:not(.lever) {
+    padding-left: 35px;
 }
