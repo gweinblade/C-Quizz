@@ -1,7 +1,7 @@
 let quizData = [];
 
 function loadQuestions() {
-    fetch('./csharp-questions.json')
+    fetch('csharp-questions.json')
         .then(response => response.json())
         .then(data => {
             quizData = data.questions;
@@ -21,28 +21,23 @@ function buildQuiz() {
 
             for (letter in questionData.answers) {
                 answers.push(
-                    `<p>
-                        <label>
-                            <input type="${isMultiSelect ? 'checkbox' : 'radio'}" name="question${questionNumber}" value="${letter}" />
-                            <span>${letter}: ${questionData.answers[letter]}</span>
-                        </label>
-                    </p>`
+                    `<label>
+                        <input type="${isMultiSelect ? 'checkbox' : 'radio'}" name="question${questionNumber}" value="${letter}">
+                        ${letter}: ${questionData.answers[letter]}
+                    </label>`
                 );
             }
 
             output.push(
-                `<div class="card question-card">
-                    <div class="card-content">
-                        <span class="card-title question">${questionData.question}</span>
-                        <div class="answers">${answers.join('')}</div>
-                    </div>
+                `<div class="question">
+                    <p>${questionData.question}</p>
+                    <div class="answers">${answers.join('')}</div>
                 </div>`
             );
         }
     });
 
     document.getElementById('quiz').innerHTML = output.join('');
-    M.updateTextFields();
 }
 
 function showResults() {
@@ -64,16 +59,14 @@ function showResults() {
 
             if (isCorrect) {
                 numCorrect++;
-                answerContainer.style.color = '#2196F3';
+                answerContainer.style.color = 'green';
             } else {
                 answerContainer.style.color = 'red';
             }
         }
     });
 
-    document.getElementById('result').innerHTML = `
-        <span class="blue-text">${numCorrect}</span> out of <span class="blue-text">${totalQuestions}</span> correct
-    `;
+    document.getElementById('result').innerHTML = `${numCorrect} out of ${totalQuestions} correct`;
 }
 
 function arraysEqual(arr1, arr2) {
@@ -85,10 +78,7 @@ function arraysEqual(arr1, arr2) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('select');
-    var instances = M.FormSelect.init(elems);
     loadQuestions();
+    document.getElementById('difficulty').addEventListener('change', buildQuiz);
+    document.getElementById('submit').addEventListener('click', showResults);
 });
-
-document.getElementById('difficulty').addEventListener('change', buildQuiz);
-document.getElementById('submit').addEventListener('click', showResults);
