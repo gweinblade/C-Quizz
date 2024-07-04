@@ -21,10 +21,13 @@ function buildQuiz() {
 
             for (letter in questionData.answers) {
                 answers.push(
-                    `<label>
+                    `<div class="answer">
+                         <label>
                         <input type="${isMultiSelect ? 'checkbox' : 'radio'}" name="question${questionNumber}" value="${letter}">
                         ${letter}: ${questionData.answers[letter]}
-                    </label>`
+                    </label>
+                    </div>
+                   `
                 );
             }
 
