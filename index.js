@@ -1,7 +1,7 @@
 let quizData = [];
 
 function loadQuestions() {
-    fetch('csharp-questions.json')
+    fetch('./csharp-questions.json')
         .then(response => response.json())
         .then(data => {
             quizData = data.questions;
