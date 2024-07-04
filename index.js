@@ -1,15 +1,13 @@
-
-
 let quizData = [];
 
 function loadQuestions() {
-   /* fetch('csharp-questions.json')
+    fetch('csharp-questions.json')
         .then(response => response.json())
         .then(data => {
             quizData = data.questions;
             buildQuiz();
         })
-        .catch(error => console.error('Error loading questions:', error));*/
+        .catch(error => console.error('Error loading questions:', error));
 }
 
 function buildQuiz() {
