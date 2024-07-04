@@ -1,136 +1,377 @@
 {
-    "questions": [
-      {
-        "level": "Junior",
-        "question": "What is the correct way to declare a variable in C#?",
-        "answers": {
-          "a": "var myVariable = 10;",
-          "b": "int myVariable = 10;",
-          "c": "variable myVariable = 10;",
-          "d": "declare myVariable = 10;"
-        },
-        "correctAnswer": "b"
+  "questions": [
+    {
+      "level": "Basic",
+      "question": "What is the correct way to declare a variable in C#?",
+      "answers": {
+        "a": "var myVariable = 10;",
+        "b": "int myVariable = 10;",
+        "c": "variable myVariable = 10;",
+        "d": "declare myVariable = 10;"
       },
-      {
-        "level": "Junior",
-        "question": "Which of the following is used to define a class in C#?",
-        "answers": {
-          "a": "struct",
-          "b": "interface",
-          "c": "class",
-          "d": "object"
-        },
-        "correctAnswer": "c"
+      "correctAnswer": ["a", "b"]
+    },
+    {
+      "level": "Basic",
+      "question": "Which of the following is used to define a class in C#?",
+      "answers": {
+        "a": "struct",
+        "b": "interface",
+        "c": "class",
+        "d": "object"
       },
-      {
-        "level": "Junior",
-        "question": "What is the purpose of the 'using' statement in C#?",
-        "answers": {
-          "a": "To import namespaces",
-          "b": "To create a new object",
-          "c": "To define a new class",
-          "d": "To start a new thread"
-        },
-        "correctAnswer": "a"
+      "correctAnswer": "c"
+    },
+    {
+      "level": "Basic",
+      "question": "What is the purpose of the 'using' statement in C#?",
+      "answers": {
+        "a": "To import namespaces",
+        "b": "To create a new object",
+        "c": "To define a new class",
+        "d": "To start a new thread"
       },
-      {
-        "level": "Junior",
-        "question": "Which keyword is used to inherit a class in C#?",
-        "answers": {
-          "a": "inherits",
-          "b": "extends",
-          "c": "implements",
-          "d": ":"
-        },
-        "correctAnswer": "d"
+      "correctAnswer": "a"
+    },
+    {
+      "level": "Basic",
+      "question": "Which keyword is used to inherit a class in C#?",
+      "answers": {
+        "a": "inherits",
+        "b": "extends",
+        "c": "implements",
+        "d": ":"
       },
-      {
-        "level": "Intermediate",
-        "question": "What is the difference between 'ref' and 'out' parameters in C#?",
-        "answers": {
-          "a": "There is no difference",
-          "b": "'ref' requires the parameter to be initialized before passing, 'out' does not",
-          "c": "'out' requires the parameter to be initialized before passing, 'ref' does not",
-          "d": "'ref' is used for value types, 'out' for reference types"
-        },
-        "correctAnswer": "b"
+      "correctAnswer": "d"
+    },
+    {
+      "level": "Basic",
+      "question": "What is the default access modifier for class members in C#?",
+      "answers": {
+        "a": "public",
+        "b": "private",
+        "c": "protected",
+        "d": "internal"
       },
-      {
-        "level": "Intermediate",
-        "question": "What is the purpose of the 'virtual' keyword in C#?",
-        "answers": {
-          "a": "To create an abstract method",
-          "b": "To prevent a method from being overridden",
-          "c": "To allow a method to be overridden in derived classes",
-          "d": "To create a static method"
-        },
-        "correctAnswer": "c"
+      "correctAnswer": "b"
+    },
+    {
+      "level": "Basic",
+      "question": "Which of the following is not a value type in C#?",
+      "answers": {
+        "a": "int",
+        "b": "float",
+        "c": "bool",
+        "d": "string"
       },
-      {
-        "level": "Intermediate",
-        "question": "What is a delegate in C#?",
-        "answers": {
-          "a": "A type that represents references to methods with a particular parameter list and return type",
-          "b": "A way to create multiple instances of a class",
-          "c": "A method that can only be called within the same class",
-          "d": "A type of exception handling mechanism"
-        },
-        "correctAnswer": "a"
+      "correctAnswer": "d"
+    },
+    {
+      "level": "Basic",
+      "question": "What is the purpose of the 'static' keyword in C#?",
+      "answers": {
+        "a": "To create an instance of a class",
+        "b": "To declare a constant variable",
+        "c": "To define a method that belongs to the class rather than an instance",
+        "d": "To prevent a class from being inherited"
       },
-      {
-        "level": "Intermediate",
-        "question": "What is the purpose of the 'yield' keyword in C#?",
-        "answers": {
-          "a": "To pause the execution of a method",
-          "b": "To return multiple values from a method",
-          "c": "To implement the IEnumerable interface",
-          "d": "To create a custom exception"
-        },
-        "correctAnswer": "b"
+      "correctAnswer": "c"
+    },
+    {
+      "level": "Basic",
+      "question": "Which of the following is used to handle exceptions in C#?",
+      "answers": {
+        "a": "try-catch",
+        "b": "if-else",
+        "c": "switch-case",
+        "d": "for-loop"
       },
-      {
-        "level": "Confirmed",
-        "question": "What is the difference between 'const' and 'readonly' in C#?",
-        "answers": {
-          "a": "There is no difference",
-          "b": "'const' is evaluated at compile-time, 'readonly' at runtime",
-          "c": "'readonly' can only be used for value types, 'const' for any type",
-          "d": "'const' can be changed during runtime, 'readonly' cannot"
-        },
-        "correctAnswer": "b"
+      "correctAnswer": "a"
+    },
+    {
+      "level": "Basic",
+      "question": "What is the purpose of the 'new' keyword in C#?",
+      "answers": {
+        "a": "To create an instance of a class",
+        "b": "To declare a new variable",
+        "c": "To define a new method",
+        "d": "To start a new thread"
       },
-      {
-        "level": "Confirmed",
-        "question": "What is the purpose of the 'lock' statement in C#?",
-        "answers": {
-          "a": "To prevent multiple threads from accessing a resource simultaneously",
-          "b": "To create a new thread",
-          "c": "To terminate a running thread",
-          "d": "To synchronize access to static members of a class"
-        },
-        "correctAnswer": "a"
+      "correctAnswer": "a"
+    },
+    {
+      "level": "Basic",
+      "question": "Which of the following is used to define a constant in C#?",
+      "answers": {
+        "a": "var",
+        "b": "let",
+        "c": "const",
+        "d": "final"
       },
-      {
-        "level": "Confirmed",
-        "question": "What is the difference between an abstract class and an interface in C#?",
-        "answers": {
-          "a": "Abstract classes can have implemented methods, interfaces cannot",
-          "b": "Interfaces can have fields, abstract classes cannot",
-          "c": "A class can implement multiple interfaces but inherit from only one abstract class",
-          "d": "Both A and C"
-        },
-        "correctAnswer": "d"
+      "correctAnswer": "c"
+    },
+    {
+      "level": "Intermediate",
+      "question": "What is the difference between 'ref' and 'out' parameters in C#?",
+      "answers": {
+        "a": "There is no difference",
+        "b": "'ref' requires the parameter to be initialized before passing, 'out' does not",
+        "c": "'out' requires the parameter to be initialized before passing, 'ref' does not",
+        "d": "'ref' is used for value types, 'out' for reference types"
       },
-      {
-        "level": "Confirmed",
-        "question": "What is the purpose of the 'unsafe' keyword in C#?",
-        "answers": {
-          "a": "To mark a method as potentially throwing exceptions",
-          "b": "To allow the use of pointers and direct memory manipulation",
-          "c": "To prevent a class from being inherited",
-          "d": "To create a method that can only be called asynchronously"
-        },
-        "correctAnswer": "b"
-      }
-    ]
-  }
+      "correctAnswer": "b"
+    },
+    {
+      "level": "Intermediate",
+      "question": "What is the purpose of the 'virtual' keyword in C#?",
+      "answers": {
+        "a": "To create an abstract method",
+        "b": "To prevent a method from being overridden",
+        "c": "To allow a method to be overridden in derived classes",
+        "d": "To create a static method"
+      },
+      "correctAnswer": "c"
+    },
+    {
+      "level": "Intermediate",
+      "question": "What is a delegate in C#?",
+      "answers": {
+        "a": "A type that represents references to methods with a particular parameter list and return type",
+        "b": "A way to create multiple instances of a class",
+        "c": "A method that can only be called within the same class",
+        "d": "A type of exception handling mechanism"
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "level": "Intermediate",
+      "question": "What is the purpose of the 'yield' keyword in C#?",
+      "answers": {
+        "a": "To pause the execution of a method",
+        "b": "To return multiple values from a method",
+        "c": "To implement the IEnumerable interface",
+        "d": "To create a custom exception"
+      },
+      "correctAnswer": "c"
+    },
+    {
+      "level": "Intermediate",
+      "question": "What is the difference between 'const' and 'readonly' in C#?",
+      "answers": {
+        "a": "There is no difference",
+        "b": "'const' is evaluated at compile-time, 'readonly' at runtime",
+        "c": "'readonly' can only be used for value types, 'const' for any type",
+        "d": "'const' can be changed during runtime, 'readonly' cannot"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "level": "Intermediate",
+      "question": "What is the purpose of the 'sealed' keyword in C#?",
+      "answers": {
+        "a": "To prevent a class from being instantiated",
+        "b": "To prevent a class from being inherited",
+        "c": "To make a class thread-safe",
+        "d": "To make all members of a class private"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "level": "Intermediate",
+      "question": "What is the difference between 'is' and 'as' operators in C#?",
+      "answers": {
+        "a": "'is' checks type compatibility, 'as' performs type conversion",
+        "b": "'as' checks type compatibility, 'is' performs type conversion",
+        "c": "There is no difference",
+        "d": "Both perform type conversion but 'as' throws an exception on failure"
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "level": "Intermediate",
+      "question": "What is the purpose of the 'params' keyword in C#?",
+      "answers": {
+        "a": "To define a parameter array",
+        "b": "To make a method parameter optional",
+        "c": "To pass parameters by reference",
+        "d": "To define a variable number of parameters"
+      },
+      "correctAnswer": "d"
+    },
+    {
+      "level": "Intermediate",
+      "question": "What is the difference between 'throw' and 'throw ex' in exception handling?",
+      "answers": {
+        "a": "There is no difference",
+        "b": "'throw' preserves the original stack trace, 'throw ex' resets it",
+        "c": "'throw ex' preserves the original stack trace, 'throw' resets it",
+        "d": "'throw' throws a new exception, 'throw ex' rethrows the caught exception"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "level": "Intermediate",
+      "question": "What is the purpose of the 'using' statement in C# (not related to namespaces)?",
+      "answers": {
+        "a": "To import namespaces",
+        "b": "To ensure the disposal of an object",
+        "c": "To create a new scope",
+        "d": "To define a new class"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "level": "Advanced",
+      "question": "What is the purpose of the 'lock' statement in C#?",
+      "answers": {
+        "a": "To prevent multiple threads from accessing a resource simultaneously",
+        "b": "To create a new thread",
+        "c": "To terminate a running thread",
+        "d": "To synchronize access to static members of a class"
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "level": "Advanced",
+      "question": "What is the difference between an abstract class and an interface in C#?",
+      "answers": {
+        "a": "Abstract classes can have implemented methods, interfaces cannot",
+        "b": "Interfaces can have fields, abstract classes cannot",
+        "c": "A class can implement multiple interfaces but inherit from only one abstract class",
+        "d": "Both A and C"
+      },
+      "correctAnswer": "d"
+    },
+    {
+      "level": "Advanced",
+      "question": "What is the purpose of the 'unsafe' keyword in C#?",
+      "answers": {
+        "a": "To mark a method as potentially throwing exceptions",
+        "b": "To allow the use of pointers and direct memory manipulation",
+        "c": "To prevent a class from being inherited",
+        "d": "To create a method that can only be called asynchronously"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "level": "Advanced",
+      "question": "What is a closure in C#?",
+      "answers": {
+        "a": "A way to close a connection to a database",
+        "b": "A function that has access to variables in its lexical scope",
+        "c": "A method to end the execution of a program",
+        "d": "A technique to prevent memory leaks"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "level": "Advanced",
+      "question": "What is the purpose of the 'volatile' keyword in C#?",
+      "answers": {
+        "a": "To make a variable thread-safe",
+        "b": "To prevent a variable from being optimized by the compiler",
+        "c": "To make a variable read-only",
+        "d": "To create a temporary variable"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "level": "Advanced",
+      "question": "What is the difference between 'Func' and 'Action' delegates in C#?",
+      "answers": {
+        "a": "'Func' can have parameters, 'Action' cannot",
+        "b": "'Action' can have parameters, 'Func' cannot",
+        "c": "'Func' returns a value, 'Action' does not",
+        "d": "There is no difference"
+      },
+      "correctAnswer": "c"
+    },
+    {
+      "level": "Advanced",
+      "question": "What is the purpose of the 'nameof' operator in C#?",
+      "answers": {
+        "a": "To get the name of a variable, type, or member as a string",
+        "b": "To create a new namespace",
+        "c": "To rename a variable",
+        "d": "To check if a name exists in the current scope"
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "level": "Advanced",
+      "question": "What is the difference between 'IEnumerable' and 'IQueryable' in C#?",
+      "answers": {
+        "a": "'IEnumerable' is for in-memory collections, 'IQueryable' is for remote data sources",
+        "b": "'IQueryable' is for in-memory collections, 'IEnumerable' is for remote data sources",
+        "c": "There is no difference",
+        "d": "'IEnumerable' is faster, 'IQueryable' is more flexible"
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "level": "Advanced",
+      "question": "What is the purpose of the 'dynamic' keyword in C#?",
+      "answers": {
+        "a": "To create a variable with a type determined at compile-time",
+        "b": "To create a variable with a type determined at runtime",
+        "c": "To create a constant variable",
+        "d": "To create a static variable"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "level": "Advanced",
+      "question": "What is the difference between 'object' and 'dynamic' types in C#?",
+      "answers": {
+        "a": "'object' requires explicit type casting, 'dynamic' does not",
+        "b": "'dynamic' requires explicit type casting, 'object' does not",
+        "c": "There is no difference",
+        "d": "'object' is a value type, 'dynamic' is a reference type"
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "level": "Expert",
+      "question": "What is the purpose of the 'Lazy<T>' class in C#?",
+      "answers": {
+        "a": "To create a lazy-loaded property",
+        "b": "To implement lazy initialization of an object",
+        "c": "To delay the execution of a task",
+        "d": "To create a thread-safe singleton"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "level": "Expert",
+      "question": "What is the difference between 'Task' and 'Thread' in C#?",
+      "answers": {
+        "a": "'Task' is higher-level and more abstract than 'Thread'",
+        "b": "'Thread' is higher-level and more abstract than 'Task'",
+        "c": "They are identical and can be used interchangeably",
+        "d": "'Task' is for CPU-bound operations, 'Thread' is for I/O-bound operations"
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "level": "Expert",
+      "question": "What is the purpose of the 'MethodImplOptions.AggressiveInlining' attribute in C#?",
+      "answers": {
+        "a": "To force the compiler to inline a method",
+        "b": "To prevent a method from being inlined",
+        "c": "To make a method thread-safe",
+        "d": "To optimize a method for recursive calls"
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "level": "Expert",
+      "question": "What is the difference between 'volatile' and 'Interlocked' operations in C#?",
+      "answers": {
+        "a": "'volatile' ensures visibility across threads, 'Interlocked' provides atomic operations",
+        "b": "'Interlocked' ensures visibility across threads, 'volatile' provides atomic operations",
+        "c": "They are identical and can be used interchangeably",
+        "d": "'volatile' is for value types, 'Interlocked' is for reference types"
+      },
+      "correctAnswer": "a"
+    }
+  ]}
