@@ -1,4 +1,5 @@
 let quizData = [];
+let filteredIndices = [];
 
 function loadQuestions() {
     fetch('csharp-questions.json')
@@ -13,9 +14,12 @@ function loadQuestions() {
 function buildQuiz() {
     const output = [];
     const difficulty = document.getElementById('difficulty').value;
+    filteredIndices = [];
 
     quizData.forEach((questionData, questionNumber) => {
         if (difficulty === 'All' || questionData.level === difficulty) {
+            filteredIndices.push(questionNumber);
+
             const answers = [];
             const isMultiSelect = Array.isArray(questionData.correctAnswer);
 
@@ -26,8 +30,7 @@ function buildQuiz() {
                         <input type="${isMultiSelect ? 'checkbox' : 'radio'}" name="question${questionNumber}" value="${letter}">
                         ${letter}: ${questionData.answers[letter]}
                     </label>
-                    </div>
-                   `
+                    </div>`
                 );
             }
 
@@ -48,8 +51,9 @@ function showResults() {
     let numCorrect = 0;
     let totalQuestions = 0;
 
-    quizData.forEach((questionData, questionNumber) => {
-        const answerContainer = answerContainers[questionNumber];
+    filteredIndices.forEach((questionNumber, index) => {
+        const questionData = quizData[questionNumber];
+        const answerContainer = answerContainers[index];
         if (answerContainer) {
             totalQuestions++;
             const isMultiSelect = Array.isArray(questionData.correctAnswer);
