@@ -4,42 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C# Quiz</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="blue darken-1">
-        <div class="nav-wrapper container">
-            <a href="#" class="brand-logo">C# Quiz</a>
-        </div>
-    </nav>
-
     <div class="container">
-        <div class="row">
-            <div class="col s12">
-                <h4 class="center-align">Test Your C# Knowledge</h4>
-                <div class="input-field">
-                    <select id="difficulty">
-                        <option value="All">All Levels</option>
-                        <option value="Basic">Basic</option>
-                        <option value="Intermediate">Intermediate</option>
-                        <option value="Advanced">Advanced</option>
-                        <option value="Expert">Expert</option>
-                    </select>
-                    <label>Select Difficulty</label>
-                </div>
-                <div id="quiz"></div>
-                <button id="submit" class="btn waves-effect waves-light blue darken-1">
-                    Submit Quiz
-                    <i class="material-icons right">send</i>
-                </button>
-                <div id="result" class="card-panel"></div>
-            </div>
+        <h1>New C# Quiz</h1>
+        <div class="difficulty-selector">
+            <label for="difficulty">Select Difficulty:</label>
+            <select id="difficulty">
+                <option value="All">All Levels</option>
+                <option value="Basic">Basic</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+                <option value="Expert">Expert</option>
+            </select>
         </div>
+        <div id="quiz"></div>
+        <button id="submit">Submit Quiz</button>
+        <div id="result"></div>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
